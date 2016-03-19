@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta http-equiv="content-Type" content="text/html;charset=UTF-8">
+  <meta name="Keywords" content=""><!-- 30个字以内 -->
+  <meta name="Description" content=""> <!-- 76字以内 -->
+  <title>网页标题</title>
+<style type="text/css">
+	*{margin:0;padding:0;}
+	#logo{
+		height:60px;	
+		background-color:#000;
+		margin-top:100px;
+		
+	}
+	.logoCon{
+		padding-top:6px;
+		width:1000px;
+		margin:0 auto;
+	}
+	#logo .logoCon dl dt{
+		float:left;
+		width:18px;
+		line-height:22px;
+		padding:4px 10px 0 30px;
+		
+	}
+	#logo .logoCon dl dt a{
+		color:#999；
+		font-size:16px;
+		text-decoration:none;
+	}
+	#logo .logoCon dl dd{
+		float:left;
+		width:200px;
+		line-height:24px;
+		padding-right:20px;
+		border-right:1px solid #585858;
+	}
+	#logo .logoCon dl dd a{
+		color:#fff; 
+		font-size:14px; 
+		font-family:"微软雅黑";
+		padding:0px 10px; 
+		text-decoration:none;
+	
+		}
+	#logo .logoCon dl dd a:hover{
+		text-decoration:underline;
+		
+		}
+	#logo .logoCon dl dd.d1{
+		width:180px;
+		position:relative;
+		}
+	#logo .logoCon dl dd.d2{width:150px;}
+	#logo .logoCon dl dd.d3{width:100px; border-right:0px;}
+	#logo .logoCon dl dd.d1 img{position:absolute; top:-20px; right:10px;}
+
+</style>
+ </head>
+
+ <body>
+	<div id="logo">
+		<div class="logoCon">
+			<dl>
+				<dt><a href="">时尚</a></dt>
+				<dd>
+					<a href="">时尚</a><a href="">奢品</a><a href="">腕表</a><a href="">男士</a>
+					<a href="">美搭</a><a href="">明星</a><a href="">图库</a><a href="">视频</a>		
+				</dd>
+				
+				<dt><a href="">美容</a></dt>
+				<dd class="d1"><img src="images/new3.gif" />
+					<a href="">美容</a><a href="">瘦身</a><a href="" class="new">医学美容</a>
+					<a href="">评测</a><a href="">美发</a><a href="">化妆品库</a>	
+				</dd>
+
+				<dt><a href="">生活</a></dt>
+				<dd class="d2">
+					<a href="">健康</a><a href="">乐活</a><a href="" >宠物</a>
+					<a href="">情感</a><a href="">美发</a><a href="">星座</a>	
+				</dd>
+
+				<dt><a href="">社区</a></dt>
+				<dd class="d3">
+					<a href="">论坛</a><a href="">博客</a>
+					<a href="">专题</a><a href="">试用</a>
+				</dd>
+
+			</dl>
+			<div style="clear:both"></div>
+		</div>
+	</div>
+
+ </body>
+</html>

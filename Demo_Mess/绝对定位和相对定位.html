@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta http-equiv="content-Type" content="text/html;charset=UTF-8">
+  <meta name="Keywords" content=""><!-- 30个字以内 -->
+  <meta name="Description" content=""> <!-- 76字以内 -->
+  <title>相对定位和绝对定位</title>
+<style type="text/css">
+	#test1{
+		width:500px;
+		height:500px;
+		background:red;
+	}
+	#p1{
+		width:150px;
+		height:150px;
+		background:green;
+		position:relative;
+		top:20px;
+		left:20px;
+		
+	}
+	#p2{
+		width:150px;
+		height:150px;
+		background:blue;
+
+	}
+	#test2{
+		width:500px;
+		height:500px;
+		background:#cc9966;
+		position:relative;
+	}
+	#p3{
+		width:150px;
+		height:150px;
+		background:#ff00cc;
+		position:absolute;
+		bottom:20px;
+		right:20px;
+
+	}
+	#p4{
+		width:150px;
+		height:150px;
+		background:yellow;
+		position:absolute;
+		top:0px;
+		right:20px;
+		z-index:11;
+
+	}
+
+	#p5{
+		width:180px;
+		height:180px;
+		background:green;
+		position:absolute;
+		top:20px;
+		right:40px;
+		z-index:10;/*通过设置z-index属性，改变层叠顺序，值越大的在上面*/
+
+	}
+</style>
+ </head>
+
+ <body>
+	<div id="test1">
+		<p id="p1">我是相对定位</p>
+		<p id="p2">我是相对定位</p>
+	</div>
+	<div id="test2">
+	绝点不是对方尽快哈发哈哈豆腐机刷卡话费啊哈 爱的发生空间还人爱妃绝点不是对方尽快哈发哈哈豆腐机刷卡话费啊哈 爱的发生空间还人爱妃绝点不是对方尽快哈发哈哈豆腐机刷卡话费啊哈 爱的发生空间还人爱妃绝点不是对方尽快哈发哈哈豆腐机刷卡话费啊哈 爱的发生空间还人爱妃绝点不是对方尽快哈发哈哈豆腐机刷卡话费啊哈 爱的发生空间还人爱妃绝点不是对方尽快哈发哈哈豆腐机刷卡话费啊哈 爱的发生空间还人爱妃
+		<p id="p3"></p>
+		<p id="p4"></p>
+		<p id="p5"></p>
+	</div>
+
+
+
+	<!-- 
+	
+				相对定位:相对于自己原有的位置移动，自己还占据原来空间
+
+				绝对定位：相对于父元素定位（用绝对定位时，父元素要求有position才行，否则将依
+				据父的父的父...到body，那个祖先有position属性就相对谁，否则body）---不占据父
+				元素位置，绝对定位就相对于直升飞机飞到父元素上空，用z-index属性控制层叠的
+	-->
+ </body>
+</html>
