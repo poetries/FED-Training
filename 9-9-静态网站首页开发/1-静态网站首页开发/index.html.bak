@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> 网页标题 </title>
+  <meta http-equiv="Content-Type" content="Text/html;charset="gbk"/>
+  <META name="keywords" content="关键字">
+  <META name="description" content="描述">
+
+<style type="text/css">
+*{
+	margin:0px;/*在网站制作过程中，这个步骤很重要*/
+	padding:0px;
+}
+#Top{
+	width:100%;
+	height:149px;
+	background:url("images/headbg.jpg");
+	
+}
+#Top .head{
+	width:1000px;
+	height:30px;
+	margin:0px auto;
+	font-size:13px;
+	font-family:"微软雅黑";
+	color:#666;
+	line-height:30px;
+}
+#Top .head span{
+	color:#E20076;
+	font-weight:bold;
+	padding:0px 4px;
+}
+#Top .head a {  /*重新定义a标签的样式*/
+	color:#666;
+	text-decoration:none;/*去掉a标签的下划线*/
+	font-weight:bold;/*加粗，也可以用数字*/
+	padding:0px 5px;
+}
+
+#Top .head a:hover{ /*a标签的伪命令，鼠标放上去变颜色*/
+	color:#E20076;
+}
+#header{
+	width:1000px;
+	height:70px;
+	margin:0px auto;
+
+}
+
+ #header .banner{
+	width:221px;
+	height:44px;
+	float:left;
+	padding-top:14px;
+}
+
+#header .logo{
+	width:511px;
+	height:70px;
+	float:left;
+	line-height:70px;
+	font-size:16px;
+	font-family:"微软雅黑";
+	padding-left:80px;
+}
+
+#header .search{
+	width:180px;
+	height:35px;
+	float:right;
+	padding-top:16px;
+	position:relative;/*相对定位*/
+}
+#header .logo a{
+	color:#000;
+	font-weight:bold;
+	text-decoration:none;
+	padding:0px 20px;
+	float:left;
+
+}
+#header .logo a:hover{
+	color:#E20076;
+}
+#header .search input.txt{
+	width:140px;
+	height:23px;
+	border:1px solid #elelel;
+	font-size:12px;
+	color:#999;
+	text-indent:10px;/*首行缩进*/
+	position:absolute;/*绝对定位*/
+	left:0px;
+	top:20px;
+
+}
+#header .search input.button{
+	width:26px;
+	height:25px;
+	background:url("images/sosoh.jpg");
+	border:0px;
+	position:absolute;/*绝对定位*/
+	left:143px;
+	top:21px;
+
+}
+
+</style>
+ </head>
+
+ <body>
+<div id="Top">
+	<!--头部信息开始-->
+	<div class="head"><img src="images/cart.png" align='absmiddle'>&nbsp;全省免费服务热线： <span>96556</span> <span>0731-84635555 </span>旅行社同行热线： <span>0731-84402588 </span> <a href="#">登陆</a> <a href="#">注册</a>
+	</div>
+	<!--头部信息结束-->
+
+	<!--banner开始-->
+	<div id="header">
+			<div class="banner"><a href=""><img src="images/logo.png"></a></div>
+			<div class="logo">
+				<a href="">首页</a>  <!-- 制作导航不一定要用无序列表ul -->
+				<a href="">出境游</a>
+				<a href="">国内游</a>
+				<a href="">特价游</a>
+				<a href="">签证</a>
+			</div>
+
+	<div class="search">
+		<form> 
+			<input type="text" class='txt' value="输入目的地" />
+			<input type="submit" class='button' value=""/>
+		</form>
+	</div>
+	<!--banner结束-->
+
+</div>
+
+
+<!--引用外部jquery类库-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" >
+	var d_Value=$(".search input.txt").val();//获取到他的默认的值
+	//alert(d_Value);
+	$(".search input.txt").focus(function(){
+		if($(this).val()==d_Value){
+			$(this).val("");//当前输入框的值设置为空
+			}
+	
+	});
+</script>
+ </body>
+
+ <!--
+	1、构建一个宽度100% 高度149px 这样一个长方形，为了保证浏览器的兼容，我们加了 *{margin:0px;		padding:0px;}
+	2、给这个长方形，添加一个背景图片，背景图片默认的会延着水平方向平铺
+	3、在大长方形构建名字 head 的小长方形，并且设置在水平距中显示 margin:上下(0px) 左右(auto); 
+	4、如何控制图片和文字在竖直方向距中 align='absmiddle'  控制文字的样式  单独控制某此文字的颜		色，给他们单独加<span></span> 并控制他里面文字的颜色
+	5、讲到了a标签 a标签本身特性，如何去掉下划线，鼠标放上去改变文字颜色 a:hover{}
+	6、构建header长方形，设置在水平距中，在里面构建三个小的长方形，两个往左，一个往右显示(左边的左浮动float:left;，右边的右浮动float:right;)
+	7、讲到了a标签制作导航，讲到了一个空隙的兼容问题(float:left;)来解决
+-->
+
+
+</html>

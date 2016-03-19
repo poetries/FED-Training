@@ -1,0 +1,275 @@
+
+*{
+	margin:0px;/*在网站制作过程中，这个步骤很重要*/
+	padding:0px;
+}
+#Top{
+	width:100%;
+	height:149px;
+	background:url("../images/headbg.jpg");
+	
+}
+#Top .head{
+	width:1000px;
+	height:30px;
+	margin:0px auto;
+	font-size:13px;
+	font-family:"微软雅黑";
+	color:#666;
+	line-height:30px;
+}
+#Top .head span{
+	color:#E20076;
+	font-weight:bold;
+	padding:0px 4px;
+}
+#Top .head a {  /*重新定义a标签的样式*/
+	color:#666;
+	text-decoration:none;/*去掉a标签的下划线*/
+	font-weight:bold;/*加粗，也可以用数字*/
+	padding:0px 5px;
+}
+
+#Top .head a:hover{ /*a标签的伪命令，鼠标放上去变颜色*/
+	color:#E20076;
+}
+#header{
+	width:1000px;
+	height:70px;
+	margin:0px auto;
+
+}
+
+ #header .banner{
+	width:221px;
+	height:44px;
+	float:left;
+	padding-top:14px;
+}
+
+#header .logo{
+	width:511px;
+	height:70px;
+	float:left;
+	line-height:70px;
+	font-size:16px;
+	font-family:"微软雅黑";
+	padding-left:80px;
+}
+
+#header .search{
+	width:180px;
+	height:35px;
+	float:right;
+	padding-top:16px;
+	position:relative;/*相对定位*/
+}
+#header .logo a{
+	color:#000;
+	font-weight:bold;
+	text-decoration:none;
+	padding:0px 20px;
+	float:left;
+
+}
+#header .logo a:hover{
+	color:#E20076;
+}
+#header .search input.txt{
+	width:140px;
+	height:23px;
+	border:1px solid #elelel;
+	font-size:12px;
+	color:#999;
+	text-indent:10px;/*首行缩进*/
+	position:absolute;/*绝对定位*/
+	left:0px;
+	top:20px;
+
+}
+#header .search input.button{
+	width:26px;
+	height:25px;
+	background:url("../images/sosoh.jpg");
+	border:0px;
+	position:absolute;/*绝对定位*/
+	left:143px;
+	top:21px;
+
+}
+
+/*导航样式*/
+
+#Top .Nav{
+	width:1000px;
+	height:49px;
+	margin:0px auto;
+}
+#Top .mainNav{
+	width:550px;
+	height:49px;
+	float:left;
+}
+#Top .smallNav{
+	width:150px;
+	height:49px;
+	float:right;
+}
+#Top .Nav .mainNav ul li{
+	list-style-type:none;/*去掉圆点*/
+	width:100px;
+	height:49px;
+	float:left;
+	line-height:49px;
+	text-align:center;/*文字水平居中*/
+	font-size:14px;
+	font-family:"微软雅黑"；
+	position:relative;/*相对定位*/
+}
+#Top .Nav .mainNav ul li a{
+	color:#fff;
+	text-decoration:none;/*去掉下划线*/
+	
+}
+#Top .Nav .mainNav ul li .menu{
+	width:350px;
+	border:2px solid #e10076;
+	border-top:0px;/*代码的优先级别，后面的级别高*/
+	position:absolute;/*只有绝对定位的元素，可以改变位置，悬浮在其他元素的上面*/
+	background:#fff;
+	filter:Alpha(opacity=90);
+	-moz-opacity: 0.9; 
+	opacity: 0.9;/*背景透明*/
+	display:none;/*隐藏*/
+	padding:10px;
+	z-index:3;/*改变定位元素的图层上下关系（那个在上，那个在下，值越大，越大越在上面）*/
+
+}
+
+#Top .Nav .mainNav ul li.hover{
+	background:#B80064;
+}
+#Top .Nav .mainNav ul li p{
+	text-align:left;
+	line-height:35px;
+	border-bottom:1px dotted #ddd;
+	font-family:"微软雅黑"；
+}
+#Top .Nav .mainNav ul li p span{
+	font-weight:bold;
+}
+#Top .Nav .mainNav ul li p a{
+	color:#666;
+}
+#Top .Nav .mainNav ul li p a:hover{
+	color:#B80064;
+}
+
+#Top .Nav .smallNav {
+	line-height:49px;
+	font-size:14px;
+	font-family:"微软雅黑"；
+}
+#Top .Nav .smallNav a{
+	color:#fff;
+	text-decoration:none;
+	float:left;
+	padding:0px 10px;
+}
+#Top .Nav .smallNav a:hover{
+	text-decoration:underline;/*加下划线*/
+}
+
+/*广告样式*/
+
+#Adv{
+	width:100%;
+	height:421px;
+	background:red;
+	position:relative;/*父元素的相对定位*/
+}
+#Adv .ImgList{
+	width:100%;
+	height:421px;
+	position:absolute;/*里面的元素绝对定位,子元素相对父元素div*/
+	left:0px;
+	top:0px;
+	z-index:1;
+
+}
+#Adv ul.button li{
+	width:50px;
+	height:10px;
+	background:#000;
+	border:1px solid red;
+	float:left;
+	margin:0px 5px;
+	list-style-type:none;
+	border:1px dotted #fff;
+}
+
+#Adv ul.button{
+	height:20px;
+	position:absolute;
+	left:43%;
+	bottom:50px;
+	display:inline-block;/*行内块级元素，position:absolute;具备这个特性，为了保证万无一失*/
+	z-index:2;
+}
+#Adv ul.button li.hover{
+	background:#fff;
+}
+
+/*第一部分样式*/
+#Part1{
+	width:1000px;
+	height:460px;
+	margin:30px auto;
+}
+#Part1 .Part1_L{
+	width:353px;
+	height:442px;
+	background:blue;
+	float:left;
+}
+#Part1 .Part1_R{
+	width:560px;
+	height:442px;
+	background:url("../images/vl.jpg") no-repeat,url("../images/vr.jpg") no-repeat right top;/*在同一个区块添加两张背景图片方法*/
+	float:right;
+	padding:0px 30px;
+}
+#Part1 .Part1_R p.biaoti{
+	height:90px;
+	background:url("../images/lxtjbg.jpg") no-repeat right bottom;
+	border-bottom:1px dashed #c9c9c9; 
+}
+#Part1 .Part1_R ul.select_but{
+	border-bottom:1px solid #eee;
+	height:32px;
+}
+#Part1 .Part1_R ul.select_but li{
+	list-style-type:none;
+	width:84px;
+	height:32px;
+	float:left;
+	font-size:14px;
+	font-family:"微软雅黑";
+	text-align:center;
+	line-height:32px;
+	background:url("../images/lxtjcdbg.jpg") no-repeat right bottom;
+}
+#Part1 .Part1_R ul.select_but li.hover{
+	background-image:url("../images/lxtjcdxg.jpg");
+}
+
+/*第一部分内容样式*/
+#Part1 .Part1_R .select_con{
+	height:300px;
+	background:red;
+	margin-top:20px;
+	overflow:hidden;
+}
+#Part1 .Part1_R .select_con .select_content{
+	height:300px;border:1px solid #000;
+}

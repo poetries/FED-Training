@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> 网页标题 </title>
+  <meta http-equiv="Content-Type" content="Text/html;charset="gbk"/>
+  <META name="keywords" content="关键字">
+  <META name="description" content="描述">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+ </head>
+
+ <body>
+<div id="Top">
+	<!--头部信息开始-->
+	<div class="head"><img src="images/cart.png" align='absmiddle'>&nbsp;全省免费服务热线： <span>96556</span> <span>0731-84635555 </span>旅行社同行热线： <span>0731-84402588 </span> <a href="#">登陆</a> <a href="#">注册</a>
+	</div>
+	<!--头部信息结束-->
+
+	<!--banner开始-->
+	<div id="header">
+			<div class="banner"><a href=""><img src="images/logo.png"></a></div>
+			<div class="logo">
+				<a href="">首页</a>  <!-- 制作导航不一定要用无序列表ul -->
+				<a href="">出境游</a>
+				<a href="">国内游</a>
+				<a href="">特价游</a>
+				<a href="">签证</a>
+			</div>
+	<!--搜索开始-->		
+	<div class="search">
+		<form> 
+			<input type="text" class='txt' value="输入目的地" />
+			<input type="submit" class='button' value=""/>
+		</form>
+	</div>
+	<!--搜索结束-->
+	</div>
+	<!--banner结束-->
+
+	<!-- 导航开始 -->
+	<div class="Nav">
+		<div class="mainNav">
+			<ul>
+				<li><a href="#">出境跟团游</a>
+					<div class="menu" >
+							<p><span>台湾港澳:</span><a href="#"> 台湾</a> | <a href="#">香港</a>  | <a href="#">澳门</a> </p>
+							<p><span>东南亚:</span> <a href="#"> 泰国 | <a href="#"> 新加坡</a> | <a href="#"> 马来西亚</a> | <a href="#"> 越南</a> | <a href="#"> 柬埔寨</a> | <a href="#"> 老挝</a> | <a href="#"> 印度 </a>|  <a href="#">尼泊尔</a></p>
+							<p><span>台湾港澳:</span> <a href="#">台湾</a> | <a href="#">香港</a> | <a href="#">澳门</a></p>
+							<p><span>东南亚:</span> <a href="#"> 泰国 | <a href="#"> 新加坡</a> | <a href="#"> 马来西亚</a> | <a href="#"> 越南</a> | <a href="#"> 柬埔寨</a> | <a href="#"> 老挝</a> | <a href="#"> 印度 </a>|  <a href="#">尼泊尔</a></p>
+					</div>
+				</li>
+
+				<li><a href="#">出境自由行</a>
+					<div class="menu"></div>
+				</li>
+
+				<li><a href="#">国内跟团游</a>
+					<div class="menu"></div>
+				</li>
+
+				<li><a href="#">国内自由行</a>
+					<div class="menu"></div>
+				</li>
+
+				<li><a href="#">湖南周边游</a>
+					<div class="menu"></div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="smallNav"> <a href="#">泰国</a>  <a href="#">台湾</a>  <a href="#">普吉</a>
+		</div>
+
+	</div>
+
+	<!-- 导航结束 -->
+</div>
+<img src="images/Adv1.jpg">
+
+
+<!--引用外部jquery类库-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" >
+	var d_Value=$(".search input.txt").val();//获取到他的默认的值
+	//alert(d_Value);
+	$(".search input.txt").focus(function(){
+		if($(this).val()==d_Value){
+			$(this).val("");//当前输入框的值设置为空
+			}
+	
+	});
+
+	$(".search input.txt").blur(function(){
+		if($(this).val()==""){
+			$(this).val(d_Value);//给他赋他的初始值
+		}
+	});
+
+
+	//二级菜单的实现
+	$(".Nav .mainNav ul li").hover(function(){
+		$(this).find(".menu").show();//显示 .menu 盒子
+		$(this).addClass("hover");//给li添加 class="hover"
+	},function(){
+		$(this).find(".menu").hide();//隐藏
+		$(this).removeClass("hover");//移除 li class="hover"
+	});
+
+</script>
+ </body>
+
+ <!--
+	1、单独建立一个样式文件(样式文件后缀名 .css )，通外引用的方式来调用 
+	2、构建用来放导航长方形，在水平距中，在这个长方形里构建两个小盒子，一个左，一个右
+	3、利用ul无序列表制作导航，这里面复习(文字样式),讲到a标签，超链接标签
+	4、在li里面构建长方形div 利用相对和绝对定位来控制位置，并讲到(透明和边框-代码的优先级别，后面的级别高)
+	5、jquery制作二级菜单滑动效果 
+	6、讲到了二级菜单里面的样式，特别强调了，代码的一个继承关系
+	7、右边小导航的制作
+	8、如果元素用了相对定位，一定要绝对定位的元素
+
+-->
+
+
+</html>
