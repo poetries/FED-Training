@@ -1,0 +1,84 @@
+﻿/*全局样式*/
+*{margin:0;padding:0;}
+a{color:#333;text-decoration:none;}
+a:hover{color:orange;text-decoration:none;}
+img{border:none;}
+ul{list-style-type:none;}
+h3{
+	width:100%;
+	height:30px;
+	line-height:30px;
+	color:#333;
+	background:#DBC2D7;
+	font-size:14px;
+	text-indent:10px;
+}
+
+/*左侧导航样式*/
+#menu_left{width:160px;margin:20px 0 0 10px;}
+#menu_left .logo{width:160px;height:77px;background:url(../images/logo_web_s.png) no-repeat -32px 0;}
+#menu_left .logo a{display:block;width:160px;height:77px;text-indent:-9999px;}
+#menu_left .tab li{
+	width:160px;
+	line-height:28px;
+	background:#573452;
+	border-top:1px solid #fff;
+	color:#C5B2B8;
+	font-size:14px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	text-align:center;
+}
+#menu_left .con{display:none;}
+#menu_left .con li{
+	width:160px;
+	height:26px;
+	line-height:26px;
+	background:#c5b2b8;
+	color:#333;
+	font-weight:normal;
+	font-size:12px;
+	cursor:pointer;
+	text-align:left;
+	text-indent:16px;
+	}
+#menu_left .con li.hover{background:#573452 url(../images/linkarrow.gif) no-repeat 140px center;color:#fff;}
+#menu_left .con li.curr{background:#eee;color:#333;font-weight:bold;}
+ 
+ /*头部页面*/
+.header{position:relative;width:100%;height:65px;background:#7C4B75;margin:10px 0 8px 0;}
+.header h2{line-height:65px;padding:0 0 0 30px;color:#fff;font-size:18px;}
+.header p{position:absolute;bottom:10px;right:40px;font-size:14px;color:#fff;}
+
+/*主体内容*/
+.content{width:99%;border:1px solid #ccc;}
+.content .title{border-bottom:1px solid #ccc;padding-bottom:10px;font-size:14px;background:#eee;}
+.content .title ul{padding-left:30px;}
+.content .title ul li{padding:2px 0;} 
+.content dl{padding-left:20px;}
+.content dl dt{font-weight:bold;padding:10px 0px;}
+.content dl dd{padding:2px 0px 2px 32px;}
+.content dl.t dd{background:url(../images/roundjian.gif) no-repeat 20px center;}
+.content p,.info p{padding:10px;}
+.content .item{width:95%;margin:20px auto;}
+.content .item h3{background:#99ccff;text-align:center;}
+.content .detail{padding:10px 20px;background:#eee;font-size:14px;}
+.content .detail dl{padding-left:10px;}
+.content .detail dl dd{line-height:150%;}
+.content .detail ul li{padding:2px 0 2px 10px;background:url(../images/arrow_right.gif) no-repeat left center;}
+.list{width:150px;position:fixed;top:20%;right:5%;}
+.list dl{width:150px;border:1px solid #ccc;font-size:14px;}
+.list dl dt{height:24px;line-height:24px;text-align:center;background:#333;font-weight:bold;color:#fff;}
+.list dl dd{height:20px;line-height:20px;padding:2px 10px;font-size:12px;background:#DBC2D7;border-top:1px solid #fff;}
+
+/*页面底部*/
+.footer{
+	width:100%;
+	height:30px;
+	margin-top:10px;
+	background:#7C4B75;
+	line-height:30px;
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+}
